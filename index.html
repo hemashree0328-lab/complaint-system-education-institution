@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Complaint Registration System</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e1e2e, #2e1e3f);
+      color: white;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2, h3 { color: #ff8aff; }
+    .card {
+      background: rgba(255,255,255,0.1);
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 0 10px #ff8aff;
+    }
+    input, select, textarea, button {
+      width: 90%;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    button { background: #ff8aff; color: white; cursor: pointer; }
+    button:hover { background: #ff4fd8; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    th, td {
+      border: 1px solid #ff8aff;
+      padding: 10px;
+    }
+    th { background: rgba(255,255,255,0.2); }
+    canvas { margin-top: 20px; background: white; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <!-- Sign Up -->
+  <section id="signup-section">
+    <h1>Complaint Registration System</h1>
+    <h3>Create Account</h3>
+    <form id="signup-form">
+      <input type="email" id="signup-email" placeholder="Email" required>
+      <input type="password" id="signup-password" placeholder="Password" required>
+      <select id="signup-role" required>
+        <option value="student">Student</option>
+        <option value="staff">Staff</option>
+        <option value="admin">Admin</option>
+      </select>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p id="signup-msg"></p>
+    <p>Already have
